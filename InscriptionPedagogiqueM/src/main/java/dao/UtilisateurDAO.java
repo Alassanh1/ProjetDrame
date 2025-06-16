@@ -4,7 +4,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
 import model.Utilisateur;
 
-class UtilisateurDAO extends GenericDAO<Utilisateur, Long> {
+public class UtilisateurDAO extends GenericDAO<Utilisateur, Long> {
     public UtilisateurDAO(EntityManager em) {
         super(em, Utilisateur.class);
     }

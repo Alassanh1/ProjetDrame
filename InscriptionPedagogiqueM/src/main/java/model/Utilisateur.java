@@ -48,4 +48,9 @@ public class Utilisateur {
 	    this.role = role;
 	}
 
+	public void setEmail(String email) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
