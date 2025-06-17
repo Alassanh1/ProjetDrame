@@ -56,7 +56,8 @@
 <body>
 <div class="login-container">
     <h2>Connexion</h2>
-    <form action="connexion" method="post">
+    <form action="${pageContext.request.contextPath}/connexion" method="post">
+
         <label for="login">Nom d'utilisateur :</label>
         <input type="text" id="login" name="login" required>
 

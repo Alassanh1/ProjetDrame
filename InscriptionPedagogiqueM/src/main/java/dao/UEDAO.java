@@ -6,7 +6,7 @@ import jakarta.persistence.EntityManager;
 import model.Formation;
 import model.UE;
 
-class UEDAO extends GenericDAO<UE, Long> {
+public class UEDAO extends GenericDAO<UE, Long> {
     public UEDAO(EntityManager em) {
         super(em, UE.class);
     }

@@ -7,7 +7,7 @@ import model.Etudiant;
 import model.InscriptionPedagogique;
 import model.UE;
 
-class InscriptionPedagogiqueDAO extends GenericDAO<InscriptionPedagogique, Long> {
+public class InscriptionPedagogiqueDAO extends GenericDAO<InscriptionPedagogique, Long> {
     public InscriptionPedagogiqueDAO(EntityManager em) {
         super(em, InscriptionPedagogique.class);
     }
