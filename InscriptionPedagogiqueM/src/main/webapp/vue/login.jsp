@@ -7,6 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<<<<<<< HEAD
+=======
+<div class="login-container">
+    <h2>Connexion</h2>
+    <form action="${pageContext.request.contextPath}/connexion" method="post">
+
+        <label for="login">Nom d'utilisateur :</label>
+        <input type="text" id="login" name="login" required>
+>>>>>>> 1ffcaa5261b06d0722160e13ad097c444d63b3b1
 
 <div class="container mt-5">
     <h2 class="text-center mb-4">Connexion</h2>

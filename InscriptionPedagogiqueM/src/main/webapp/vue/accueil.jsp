@@ -75,8 +75,9 @@
     <h2>Gérez vos inscriptions facilement</h2>
     <p>Connectez-vous ou inscrivez-vous pour accéder aux fonctionnalités d'inscription et de gestion des UE.</p>
     <div class="buttons">
-        <a href="login.jsp">Se connecter</a>
-        <a href="inscription.jsp">S'inscrire</a>
+        <a href="${pageContext.request.contextPath}/vue/login.jsp">Se connecter</a>
+        <a href="${pageContext.request.contextPath}/vue/inscription.jsp">S'inscrire</a>
+
     </div>
 </div>
 <footer>

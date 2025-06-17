@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Inscription - Étudiant</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <style>
         body {
             background-color: #f5f5f5;
@@ -56,7 +56,7 @@
 <body>
 <div class="form-container">
     <h2>Créer un compte étudiant</h2>
-    <form action="inscription" method="post">
+    <form action="${pageContext.request.contextPath}/inscription" method="post">
         <label for="login">Nom d'utilisateur :</label>
         <input type="text" id="login" name="login" required>
 

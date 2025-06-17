@@ -36,7 +36,8 @@ public class ServletConnexion extends HttpServlet {
 	            session.setAttribute("utilisateur", utilisateur);
 
 	            if (utilisateur.getRole() == Role.ETUDIANT) {
-	                response.sendRedirect("etudiant/dashboard.jsp");
+	            	response.sendRedirect(request.getContextPath() + "/vue/etudiant/dashboard.jsp");
+
 	            } else if (utilisateur.getRole() == Role.RESPONSABLE) {
 	                response.sendRedirect("responsable/dashboard.jsp");
 	            }
