@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "etudiants")
 public class Etudiant {
 
     @Id
@@ -16,7 +17,8 @@ public class Etudiant {
     private String sexe;
     private String adresse;
     private String email;
-
+    private String filiere;
+    private String niveau;
     @ManyToOne
     @JoinColumn(name = "groupe_td_id")
     private Groupe groupeTD;

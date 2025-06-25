@@ -5,7 +5,7 @@
 <%
     Utilisateur utilisateur = (Utilisateur) session.getAttribute("utilisateur");
     if (utilisateur == null || utilisateur.getRole().toString().equals("RESPONSABLE")) {
-        response.sendRedirect("../login.jsp");
+        response.sendRedirect("login.jsp");
         return;
     }
 
