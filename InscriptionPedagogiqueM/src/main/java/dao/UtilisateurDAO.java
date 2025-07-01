@@ -1,17 +1,25 @@
 package dao;
 
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.Query;
+import jakarta.persistence.NoResultException;
+
 import model.Utilisateur;
 
-public class UtilisateurDAO extends GenericDAO<Utilisateur, Long> {
+public class UtilisateurDAO {
+    private EntityManager em;
+
     public UtilisateurDAO(EntityManager em) {
-        super(em, Utilisateur.class);
+        this.em = em;
     }
 
     public Utilisateur findByLogin(String login) {
-        Query query = em.createQuery("SELECT u FROM Utilisateur u WHERE u.login = :login", Utilisateur.class);
-        query.setParameter("login", login);
-        return (Utilisateur) query.getSingleResult();
+        try {
+            return em.createQuery(
+                "SELECT u FROM Utilisateur u WHERE u.login = :login", Utilisateur.class)
+                .setParameter("login", login)
+                .getSingleResult();
+        } catch (NoResultException e) {
+            return null;
+        }
     }
 }
